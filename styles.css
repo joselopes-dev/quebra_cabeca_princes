@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: rgb(245, 219, 133);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #game-info {
+    margin-bottom: 10px;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .tile {
+    width: 100px;
+    height: 100px;
+    background-color: #f0a500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .empty {
+    background-color: #ccc;
+    cursor: default;
+  }
+
+  #reset-btn {
+    width: 200px;
+    height: 30px;
+  }
+  
+  #game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+  }
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+  <title>Quebra-Cabeça</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Quebra-Cabeça</h1>
+  <div id="game-info">
+    <p>Movimentos: <span id="move-count">0</span></p>
+    <button id="reset-btn">Reiniciar</button> <!-- Botão de reiniciar -->
+  </div>
+  <div id="game-board">
+    <div class="tile" id="tile-1"><img src="img_princesas9.png" alt="" width="100px" height="100px"></div>
+    <div class="tile" id="tile-2"><img src="img_princesas2.png" alt="" width="100px" height="100px"></div>
+    <div class="tile" id="tile-3"><img src="img_princesas3.png" alt="" width="100px" height="100px"></div>
+    <div class="tile" id="tile-4"><img src="img_princesas4.png" alt="" width="100px" height="100px"></div>
+    <div class="tile" id="tile-5"><img src="img_princesas5.png" alt="" width="100px" height="100px"></div>
+    <div class="tile" id="tile-6"><img src="img_princesas6.png" alt="" width="100px" height="100px"></div>
+    <div class="tile" id="tile-7"><img src="img_princesas7.png" alt="" width="100px" height="100px"></div>
+    <div class="tile" id="tile-8"><img src="img_princesas8.png" alt="" width="100px" height="100px"></div>
+    <div class="tile empty" id="empty-tile"></div>
+  </div> <br><br>
+
+  <img src="img_princesas.png" alt="" width="200px" height="200px">
+
+  <!-- Área para mostrar a mensagem "PERDEU MANINHO!" -->
+  <div id="game-over-message" style="display: none;">PERDEU MANINHO!</div>
+
+  <!-- Área para mostrar a mensagem de fim de jogo -->
+<div id="game-over-message" style="display: none;"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
