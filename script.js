@@ -1,7 +1,7 @@
 const board = document.getElementById("game-board");
 const tiles = Array.from(document.querySelectorAll(".tile"));
 let emptyTile = document.getElementById("empty-tile");
-let moveCount = 50; // Iniciar com o número máximo de movimentos permitidos
+let moveCount = 5000; // Iniciar com o número máximo de movimentos permitidos
 const resetBtn = document.getElementById("reset-btn");
 const gameOverMessage = document.getElementById("game-over-message"); // Elemento para a mensagem de fim de jogo
 
